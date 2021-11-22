@@ -13,9 +13,11 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.metrics import AUC
 
 from model import DeepFM
+import os
+import sys
+sys.path.append('../')
 from data_process.criteo import create_criteo_dataset
 
-import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
